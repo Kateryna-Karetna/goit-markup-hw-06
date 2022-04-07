@@ -854,3 +854,55 @@ img {
   color: var(--primary-black-color);
   background-color: var(--primary-white-color);
 }
+
+.modal-button:hover,
+.modal-button:focus {
+  fill: var(--accent-color);
+}
+
+.form-title {
+  padding-top: 40px;
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+
+  color: var(--title-text-color);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px 0 40px;
+}
+
+label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+}
+
+/* .input-user {
+  position: relative;
+}
+
+svg.icon-user {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+} */
+
+.textarea {
+  resize: none;
+}
+
+.button-form {
+  margin-left: 0;
+
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
