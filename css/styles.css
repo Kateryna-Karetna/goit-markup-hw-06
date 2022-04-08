@@ -601,7 +601,6 @@ img {
 .container-form {
   display: flex;
   flex-direction: column;
-  /* margin-left: 93px; */
 }
 
 .join.join-form {
@@ -860,31 +859,30 @@ img {
   fill: var(--accent-color);
 }
 
+/* .modal-form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px 0 40px;
+} */
+
 .form-title {
   padding-top: 40px;
   margin-bottom: 12px;
 
-  font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
 
   color: var(--title-text-color);
 }
-
-form {
-  display: flex;
-  flex-direction: column;
-  padding: 0 40px 0 40px;
-}
-
+/* 
 label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
 
   color: var(--primary-text-color);
-}
+} */
 
 /* .input-user {
   position: relative;
@@ -896,7 +894,7 @@ svg.icon-user {
   left: 0;
 } */
 
-.textarea {
+/* .textarea {
   resize: none;
 }
 
@@ -905,4 +903,4 @@ svg.icon-user {
 
   line-height: 1.88;
   letter-spacing: 0.06em;
-}
+} */
