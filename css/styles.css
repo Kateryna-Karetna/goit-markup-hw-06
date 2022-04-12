@@ -713,23 +713,23 @@ img {
 
 /* Кнопка */
 
-.btn-list {
+.btn__list {
   display: flex;
   justify-content: center;
 }
 
-.btn-item:not(:last-child) {
+.btn__wrapper:not(:last-child) {
   margin-right: 8px;
 }
 
-.btn-portfolio {
+.btn__item {
   transition: box-shadow var(--anim-duration) var(--cubic), color var(--anim-duration) var(--cubic),
     background-color var(--anim-duration) var(--cubic);
 }
 
 /* Секция портфолио */
 
-.portfolio-list {
+.portfolio__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
@@ -737,34 +737,34 @@ img {
   margin-left: -30px;
 }
 
-.portfolio-item {
+.portfolio__item {
   margin-bottom: var(--primary-item-size);
   margin-left: var(--primary-item-size);
 }
 
-.portfolio-link {
+.portfolio__link {
   transition: box-shadow var(--anim-duration) var(--cubic);
 
   display: block;
 }
 
-.portfolio-link:hover,
-.portfolio-link:focus {
+.portfolio__link:hover,
+.portfolio__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-link:hover .card-text,
-.portfolio-link:focus .card-text {
+.portfolio__link:hover .portfolio__text,
+.portfolio__link:focus .portfolio__text {
   transform: translateY(0);
 }
 
-.card-thumb {
+.card {
   position: relative;
   overflow: hidden;
 }
 
-.card-text {
+.portfolio__text {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -782,7 +782,7 @@ img {
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-.card-element {
+.card__thumb {
   padding: 20px 24px;
 
   border-right-width: 1px;
@@ -796,7 +796,7 @@ img {
   border-left-color: #eeeeee;
 }
 
-.portfolio-title {
+.card__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -804,7 +804,7 @@ img {
   color: var(--title-text-color);
 }
 
-.portfolio-text {
+.card__text {
   margin-top: 4px;
 
   font-size: 16px;
