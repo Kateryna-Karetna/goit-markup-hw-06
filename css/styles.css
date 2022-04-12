@@ -1000,19 +1000,17 @@ textarea::placeholder {
 }
 
 .icon-sign {
-  transition: border-color var(--anim-duration) var(--cubic), fill var(--anim-duration) var(--cubic),
-    opacity var(--anim-duration) var(--cubic);
-
-  opacity: 0;
-  border-radius: 4px;
-  appearance: none;
-}
-
-.form-checkbox:checked ~ .icon-sign {
   position: absolute;
   top: 2px;
   left: 0;
+  transition: border-color var(--anim-duration) var(--cubic), fill var(--anim-duration) var(--cubic),
+    opacity var(--anim-duration) var(--cubic);
 
+  border-radius: 4px;
+  opacity: 0;
+}
+
+.form-checkbox:checked ~ .icon-sign {
   opacity: 1;
 
   fill: var(--primary-white-color);
