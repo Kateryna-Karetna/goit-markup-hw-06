@@ -669,9 +669,10 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form__button {
+.form__wrapper-btn {
   display: flex;
   align-items: flex-end;
+  margin-left: 12px;
 }
 
 .form__btn {
@@ -680,7 +681,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 12px;
   width: 200px;
   height: 50px;
 
@@ -877,10 +877,7 @@ img {
 .modal-form {
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 40px;
-  width: 448px;
+  padding: 40px;
 }
 
 .modal-form__title {
@@ -973,8 +970,8 @@ img {
 }
 
 .checkbox {
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+
   margin-top: 20px;
 
   font-size: 14px;
@@ -983,15 +980,19 @@ img {
   color: var(--primary-text-color);
 }
 
-.checkbox {
-  position: relative;
+.checkbox__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .checkbox__item {
+  position: relative;
   transition: border-color var(--anim-duration) var(--cubic),
-    box-shadow var(--anim-duration) var(--cubic);
+    box-shadow var(--anim-duration) var(--cubic), background-color var(--anim-duration) var(--cubic);
 
   display: inline-block;
+  margin-right: 7px;
   width: 16px;
   height: 15px;
 
@@ -1000,28 +1001,31 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.checkbox__input:checked + .checkbox__item {
+  box-shadow: none;
+
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+}
+
 .checkbox__icon {
+  transition: fill var(--anim-duration) var(--cubic), opacity var(--anim-duration) var(--cubic);
+
   position: absolute;
-  top: 2px;
+  top: 50%;
   left: 0;
-  transition: border-color var(--anim-duration) var(--cubic), fill var(--anim-duration) var(--cubic),
-    opacity var(--anim-duration) var(--cubic);
+  transform: translateY(-50%);
+
+  padding: 1px;
 
   border-radius: 4px;
   opacity: 0;
 }
 
-.checkbox__input:checked + .checkbox__item {
-  box-shadow: none;
-
-  border-color: var(--accent-color);
-}
-
-.checkbox__input:checked ~ .checkbox__icon {
+.checkbox__input:checked + .checkbox__item > .checkbox__icon {
   opacity: 1;
 
   fill: var(--primary-white-color);
-  background-color: var(--accent-color);
 }
 
 .checkbox__href {

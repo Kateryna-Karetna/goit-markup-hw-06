@@ -411,7 +411,7 @@
             <label class="form__join text-title" for="mail">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
             <input class="form__input" type="email" name="email" id="mail" placeholder="E-mail" />
           </div>
-          <div class="form__button">
+          <div class="form__wrapper-btn">
             <button class="form__btn" type="submit">
               Подписаться
               <svg class="form__icon" width="24" height="24">
@@ -472,10 +472,11 @@
           <div class="checkbox">
             <label class="checkbox__label">
               <input class="checkbox__input visually-hidden" type="checkbox" name="agreement" />
-              <span class="checkbox__item"></span>
-              <svg class="checkbox__icon" width="16" height="15">
-                <use href="./images/icons/icons.svg#sign"></use>
-              </svg>
+              <span class="checkbox__item"
+                ><svg class="checkbox__icon" width="14" height="11">
+                  <use href="./images/icons/icons.svg#sign"></use>
+                </svg>
+              </span>
               Соглашаюсь с рассылкой и принимаю
               <span><a class="checkbox__href" href="">Условия договора</a></span>
             </label>
